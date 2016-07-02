@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Scratch Pad</title>
+    <style>
+      .greeting {
+        font-size: 20px;
+        font-family: 'Open Sans';
+      }
+    </style>
+  </head>
+  <body>
+    
+    <section id="wrapper"></section>
+  
+  </body>
+  <script>
+    var wrapper = document.getElementById('wrapper');
+    
+    var name = prompt("What is your name?");
+    
+    wrapper.innerHTML = '<h4 class=\'greeting\'>Welcome ' + name + '</h4>';
+    
+    
+  </script>
+</html>
