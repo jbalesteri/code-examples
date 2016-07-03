@@ -264,6 +264,10 @@ Full-Width Styles
   width: 100%;
 }
 
+#sidebar {
+  max-width: 360px;
+}
+
 .inner {
   position: relative;
   max-width: 640px;
