@@ -1,5 +1,5 @@
-# J. Balesteri Code Samples
-Test for Github Pages
+# J. Balesteri Code Examples
+Code Examples
 
 ## Live View:
-[View Page](http://jbalesteri.github.io/test-gh-page/)
+[View Page](http://jbalesteri.github.io/code-examples/)
