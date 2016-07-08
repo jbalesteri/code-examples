@@ -1,10 +1,11 @@
 function pieChart(amount,total){
 
      var percentage = amount/total;
-     console.log("Percentage = " + percentage);
-     console.log("Amount = " + amount);
-     console.log("Total = " + total)
+     console.log("percentage = " + percentage);
+     console.log("vowels = " + amount);
+     console.log("total letters = " + total)
 
+     // draw chart on canvas
      var canvas = document.getElementById("ratios");
      var ctx = canvas.getContext("2d");
      var lastend = 0;
@@ -12,8 +13,7 @@ function pieChart(amount,total){
      var myTotal = 0;
      var myColor = ['magenta','grey'];
 
-     for(var e = 0; e < data.length; e++)
-     {
+     for(var e = 0; e < data.length; e++) {
        myTotal += data[e];
      }
 
@@ -30,7 +30,6 @@ function pieChart(amount,total){
 
 }
 
-/* Vowel Counter */
 function vowelCounter(string){
      var input = document.getElementById('vowelInput');
      var string = input.value;
@@ -79,5 +78,3 @@ function vowelCounter(string){
      // write out percentage under chart
      document.getElementById('percentOutput').innerHTML = "<svg width='16' height='16'><rect width='16' height='16' style='fill:magenta;' /></svg>" + " = " + ((Vowels.total/string.length) * 100).toFixed(2) + "% vowels</span>"; 
 }
-
-// vowelCounter('amphibian');

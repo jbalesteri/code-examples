@@ -1,27 +1,12 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
+    <title>J. Balesteri Code Examples</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -47,7 +32,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-blue.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/prism.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
     <style>
     #view-source {
       position: fixed;
@@ -79,178 +66,223 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <!-- OVERVIEW TAB -->
-        <!-- <div class="mdl-layout__tab-panel is-active" id="overview">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-              <i class="material-icons">play_circle_filled</i>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Features</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Details</h4>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle mdl-color--primary"></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Lorem ipsum dolor sit amet</h5>
-                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
-                </div>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Technology</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-              <li class="mdl-menu__item">Lorem</li>
-              <li class="mdl-menu__item" disabled>Ipsum</li>
-              <li class="mdl-menu__item">Dolor</li>
-            </ul>
-          </section>
-          <section class="section--footer mdl-color--white mdl-grid">
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-              <div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
-            </div>
-            <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-              <h5>Lorem ipsum dolor sit amet</h5>
-              Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
-            </div>
-          </section>
-        </div> -->
         <!-- BASICS TAB -->
         <div class="mdl-layout__tab-panel is-active" id="basics">
+          <!-- Vowel Counter -->
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
 
-              <h4 id="lorem1">Vowel Counter</h4>
-              Basic application to count vowels in a given string and output following results:
-              <ul>
-                <li>Count total amount of vowels</li>
-                <li>Count the occurance of each individual vowel</li>
-                <li>Compare the percentage of vowels and consanants
-                  <ul>
-                    <li>Build pie graph for visual display</li>
-                    <li>Show numerical percentage (to hundredths)</li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- Simple Textfield -->
-              <form action="#">
-                <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="text" id="vowelInput" onchange="vowelCounter(this)">
-                  <label class="mdl-textfield__label" for="sample1">Input word...</label>
-                </div>
-              </form>
+                <h4 id="lorem1">Vowel Counter</h4>
+                Basic application to count vowels in a given string and output following results:
+                <ul>
+                  <li>Count total amount of vowels</li>
+                  <li>Count the occurance of each individual vowel</li>
+                  <li>Compare the percentage of vowels and consanants
+                    <ul>
+                      <li>Build pie graph for visual display</li>
+                      <li>Show numerical percentage (to hundredths)</li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- Simple Textfield -->
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="vowelInput" onchange="vowelCounter(this)">
+                    <label class="mdl-textfield__label" for="sample1">Input word...</label>
+                  </div>
+                </form>
 
-              <!-- Return results -->
-              <div style="float:left;">
-                <h6>Vowel Counts:</h6>
-                <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" id="vowelCounts">
-                  <thead>
-                    <tr>
-                      <th class="mdl-data-table__cell--non-numeric">Vowel</th>
-                      <th>Quantity</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="mdl-data-table__cell--non-numeric">A</td>
-                      <td id="vowelsA">0</td>
-                    </tr>
-                    <tr>
-                      <td class="mdl-data-table__cell--non-numeric">E</td>
-                      <td id="vowelsE">0</td>
-                    </tr>
-                    <tr>
-                      <td class="mdl-data-table__cell--non-numeric">I</td>
-                      <td id="vowelsI">0</td>
-                    </tr>
-                    <tr>
-                      <td class="mdl-data-table__cell--non-numeric">O</td>
-                      <td id="vowelsO">0</td>
-                    </tr>
-                    <tr>
-                      <td class="mdl-data-table__cell--non-numeric">U</td>
-                      <td id="vowelsU">0</td>
-                    </tr>
-                    <tr>
-                      <td class="mdl-data-table__cell--non-numeric">All</td>
-                      <td id="totalVowels">0</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-                <div id="percentChart" style="float:right;">
-                  <h6>Percentage vowels/consanants:</h6>
-                  <canvas id="ratios" width="300" height="300"></canvas>
-                  <h6 id="percentOutput"></h6>
+                <!-- Return results -->
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--6-col">
+                    <h6>Vowel Counts:</h6>
+                    <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" id="vowelCounts">
+                      <thead>
+                        <tr>
+                          <th class="mdl-data-table__cell--non-numeric">Vowel</th>
+                          <th>Quantity</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">A</td>
+                          <td id="vowelsA">0</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">E</td>
+                          <td id="vowelsE">0</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">I</td>
+                          <td id="vowelsI">0</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">O</td>
+                          <td id="vowelsO">0</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">U</td>
+                          <td id="vowelsU">0</td>
+                        </tr>
+                        <tr>
+                          <td class="mdl-data-table__cell--non-numeric">All</td>
+                          <td id="totalVowels">0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div id="percentChart" class="mdl-cell mdl-cell--6-col">
+                    <h6>Percentage vowels/consanants:</h6>
+                    <canvas id="ratios" width="300" height="300"></canvas>
+                    <h6 id="percentOutput"></h6>
+                  </div>
                 </div>
+                <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col">
+                    <h6>JS:</h6>
+                    <pre><code class="language-js">
+function pieChart(amount,total){
+  // declare variables
+  var percentage = amount/total;
+  var canvas = document.getElementById("ratios");
+  var ctx = canvas.getContext("2d");
+  var lastend = 0;
+  var data = [percentage,(1 - percentage)];
+  var myTotal = 0;
+  var myColor = ['magenta','grey'];
+  // output
+  for(var e = 0; e < data.length; e++) {
+    myTotal += data[e];
+  }
+
+  for (var i = 0; i < data.length; i++) {
+    ctx.fillStyle = myColor[i];
+    ctx.beginPath();
+    ctx.moveTo(canvas.width/2,canvas.height/2);
+    ctx.arc(canvas.width/2,canvas.height/2,canvas.height/2,lastend,lastend+(Math.PI*2*(data[i]/myTotal)),false);
+    ctx.lineTo(canvas.width/2,canvas.height/2);
+    ctx.fill();
+    lastend += Math.PI*2*(data[i]/myTotal);
+  }
+}
+
+/* Vowel Counter */
+function vowelCounter(string){
+  var input = document.getElementById('vowelInput');
+  var string = input.value;
+
+  var Vowels = {
+    A : 0,
+    E : 0,
+    I : 0,
+    O : 0,
+    U : 0,
+    total : 0
+  };
+               
+  for(i = 0; i < string.length; i++){
+    var ltr = string.charAt(i);
+    
+    if(ltr === 'a' || ltr === 'A'){
+         Vowels.total += 1;
+         Vowels.A += 1;
+    }else if(ltr === 'e' || ltr === 'E'){
+         Vowels.total += 1;
+         Vowels.E += 1;
+    }else if(ltr === 'i' || ltr === 'I'){
+         Vowels.total += 1;
+         Vowels.I += 1;
+    }else if(ltr === 'o' || ltr === 'O'){
+         Vowels.total += 1;
+         Vowels.O += 1;
+    }else if(ltr === 'u' || ltr === 'U'){
+         Vowels.total += 1;
+         Vowels.U += 1;
+    };
+  }
+
+  // table data output
+  document.getElementById('vowelsA').innerHTML = Vowels.A;
+  document.getElementById('vowelsE').innerHTML = Vowels.E;
+  document.getElementById('vowelsI').innerHTML = Vowels.I;
+  document.getElementById('vowelsO').innerHTML = Vowels.O;
+  document.getElementById('vowelsU').innerHTML = Vowels.U;
+  document.getElementById('totalVowels').innerHTML = Vowels.total;
+
+  // build chart for vowel/consant percentage display
+  pieChart(Vowels.total,string.length);
+
+  // write out percentage under chart
+  document.getElementById('percentOutput').innerHTML = "<svg width='16' height='16'><rect width='16' height='16' style='fill:magenta;' /></svg>" + " = " + ((Vowels.total/string.length) * 100).toFixed(2) + "% vowels</span>"; 
+}
+                    </code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Recursion -->
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+
+                <h4>Recursion</h4>
+                Basic application showing recursion:
+                <ul>
+                  <li>Declarations available from "hoisting"</li>
+                  <li>Memory in the "stack"</li>
+                </ul>
+
+                <h6>Code Example:</h6>
+                <pre><code class="language-js">
+function recursionExample(n){
+  function a(num) {
+    if(num > 20) return num;
+    return b(num + 2);
+  }
+
+  function b(num) {
+    return c(num) + 1;
+  }
+
+  function c(num) {
+    return a(num * 2);
+  }
+
+  return a(n);
+};
+
+recursionExample(1); //passing in "1" for explanation
+                </code></pre>
+                <!--
+                <p>In the afore mentioned code, I use the example of passing in "1" and walk through the code. It is slightly more convoluted </p>
+                <ol>
+                  <li>"1" is passed into a;</li>
+                  <li>it's less than 20
+                  <li>passes 3(1+2) to b;</li>
+                </ol>
+                -->
+                <!-- Simple Textfield -->
+                <!--
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="number" id="numInput" onchange="vowelCounter(this)" disabled="disabled">
+                    <label class="mdl-textfield__label" for="sample2">Input number...</label>
+                  </div>
+                </form>
+                -->
+                <!-- Return results -->
+                <!--
+                <div>                
+                  <h6>Results:</h6>
+                </div>
+                -->
               </div>
             </div>
           </section>
         </div>
+
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
             <div class="mdl-mega-footer--drop-down-section">
@@ -308,6 +340,8 @@
     </div>
     <a href="https://github.com/jbalesteri/test-gh-page" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"><svg aria-hidden="true" class="octicon octicon-mark-github" height="16" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="#ffffff"></path></svg>View Source</a>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="scripts/vowelCounter.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/prism.js"></script>
   </body>
 </html>
