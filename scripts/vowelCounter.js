@@ -30,9 +30,16 @@ function pieChart(amount,total){
 
 }
 
+function prevDef(e){ 
+     e.preventDefault()
+}
+
 function vowelCounter(string){
      var input = document.getElementById('vowelInput');
-     var string = input.value;
+     var string = input.value.toLowerCase();
+     input.addEventListener( 'onchange', prevDef, false );
+
+
 
      var Vowels = {
           A : 0,
@@ -46,19 +53,19 @@ function vowelCounter(string){
      for(i = 0; i < string.length; i++){
           var ltr = string.charAt(i);
           
-          if(ltr === 'a' || ltr === 'A'){
+          if(ltr === 'a'){
                Vowels.total += 1;
                Vowels.A += 1;
-          }else if(ltr === 'e' || ltr === 'E'){
+          }else if(ltr === 'e'){
                Vowels.total += 1;
                Vowels.E += 1;
-          }else if(ltr === 'i' || ltr === 'I'){
+          }else if(ltr === 'i'){
                Vowels.total += 1;
                Vowels.I += 1;
-          }else if(ltr === 'o' || ltr === 'O'){
+          }else if(ltr === 'o'){
                Vowels.total += 1;
                Vowels.O += 1;
-          }else if(ltr === 'u' || ltr === 'U'){
+          }else if(ltr === 'u'){
                Vowels.total += 1;
                Vowels.U += 1;
           };
